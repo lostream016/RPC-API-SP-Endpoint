@@ -63,7 +63,7 @@ GO
 USE Corporation;
 GO
 
-CREATE PROCEDURE [GetEmployee]
+CREATE PROCEDURE [GetAllEmployee]
 AS
 
 BEGIN
@@ -75,7 +75,7 @@ END;
 GO
 
 
-CREATE PROCEDURE AddEmployee
+CREATE PROCEDURE [AddEmployee]
 @JsonBody AS VARCHAR(MAX)
 AS
 
@@ -105,3 +105,28 @@ END;
 
 GO
 ```
+* Adjust the project settings with your environment <br>
+-- Open **Web.config** file <br>
+-- Inside **connectionStrings** XML tag <br>
+-- Change **data source**=**your server name** , **initial catalog**=**your db name**, And **user id** & **password** to access the database <br>
+
+## It's Time to Try
+* Rebuild & Run the project <br>
+-- You can use iis express or register your project using iis (local hosting server) to achieve this
+* Open Postman desktop app or else and access the SP via API
+```
+METHOD GET
+http://localhost:1805/api/SP/Get/GetAllEmployee
+```
+```
+METHOD POST
+http://localhost:1805/api/SP/Get/AddEmployee
+
+BODY JSON
+{
+	"Name": "Cassandra",
+	"Age": 22,
+	"FK_Job_ID": "2"
+}
+```
+
