@@ -5,15 +5,15 @@ Fortunately in **SQL Server 2016** or above, **SQL query can read the data insid
 
 ## How it Works
 it's pretty simple :
-⋅⋅* The client do the request to the API
+* The client do the request to the API
 ```
 http://localhost:1805/api/SP/Get/GetEmployee
 ```
-⋅⋅* The API Endpoint in this app is a store procedure (SP) name that to be executed
-⋅⋅* So, the syntax when call api is:
+* The API Endpoint in this app is a store procedure (SP) name that to be executed
+* So, the syntax when call api is:
 ```
 http://**your domain**/api/**controller**/**action**/**SP Name**
 ```
-⋅⋅* The API only throws a value between client and SP, which means the api let the SP do the miracle
-⋅⋅* So, if you want to add more specific job to be solved, you just create new SP, it's pretty simple right 
+* The API only throws a value between client and SP, which means the api let the SP do the miracle
+* So, if you want to add more specific job to be solved, you just create new SP 
 
