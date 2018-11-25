@@ -18,7 +18,7 @@ http://**your domain**/api/**controller**/**action**/**SP Name**?**SP Param 1 = 
 * So, if you want to add more specific job to be solved, you only have to create new SP in SQL Server
 
 ## Before Run the Project
-* Make sure the your DB environment is ready (this is only just for demo), run the SQL Query below:
+* Make sure the your DB environment is ready (**this is only just for demo**), run the SQL Query below:
 ```
 CREATE DATABASE Corporation;
 GO
