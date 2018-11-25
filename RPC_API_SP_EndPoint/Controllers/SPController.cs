@@ -50,7 +50,7 @@ namespace RPC_API_SP_EndPoint.Controllers
                 string dataBody = await Request.Content.ReadAsStringAsync();                
                 param.Add("stringJson", dataBody);
 
-                var result = SPExecutor.ExecuteSp(ext, param, out query_result);
+                var result = SPExecutor.ExecuteSp(ext, param, out query_result); //sp execution
 
                 if(query_result != null)
                 {
