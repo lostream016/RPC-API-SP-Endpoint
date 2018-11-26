@@ -96,7 +96,7 @@ BEGIN
 	FROM OPENJSON(@JsonBody);
 	
 	SELECT @Name		  = [value] FROM #temp_save_employee WHERE [key] = 'Name';	
-	SELECT @Age			  = [value] FROM #temp_save_employee WHERE [key] = 'Age';
+	SELECT @Age		  = [value] FROM #temp_save_employee WHERE [key] = 'Age';
 	SELECT @FK_Job_ID	  = [value] FROM #temp_save_employee WHERE [key] = 'FK_Job_ID';
 
 	INSERT INTO Employee([Name], [Age], [FK_Job_ID], [Created_Date], [LastUpdate_Date])
