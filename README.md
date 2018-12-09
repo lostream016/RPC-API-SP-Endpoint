@@ -39,7 +39,7 @@ http://localhost:1805/api/SP/Get/GetAllEmployee
 METHOD POST
 http://localhost:1805/api/SP/Get/AddEmployee
 
-BODY JSON
+REQUEST BODY (JSON)
 {
 	"Name": "Cassandra",
 	"Age": 22,
